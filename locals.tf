@@ -12,3 +12,13 @@
 
 # Practice 24/06/26
 
+#VPC
+locals {
+  common_tags = {
+    Project = var.project_name
+    Env = var.env
+    Terraform = true
+  }
+  common_name_suffix = "${var.project_name}-${var.env}"
+
+}
